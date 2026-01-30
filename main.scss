@@ -1,0 +1,21 @@
+@use "mytailwind";
+body {
+  background-image: url(living.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.material-symbols-outlined {
+    transition: transform 0.3s ease-in-out;
+}
+.material-symbols-outlined:hover {
+    transform: scale(1.2);
+    color: red;
+}
+.notify:hover {
+    animation: notify 2s;
+}
+@keyframes notify {
+    0% { rotate: 0deg; }
+    50% { rotate: 30deg; }
+    100% { rotate: 0deg; }
+}
